@@ -54,11 +54,11 @@ function checkChosenAnswer() {
   //if the user picked the right answer
   if (answer === rightAnswer)
   {
-    correctAnswer();
+    correctAnswer(answer);
   }
   //if the user picked the wrong answer
   else if (possibleAnswers.includes(answer)) {
-    wrongAnswer();
+    wrongAnswer(answer, rightAnswer);
   }
   else {
     throw `Invalid answer ${answer}! Quiz cancelled!`;
@@ -73,15 +73,15 @@ function checkChosenAnswer() {
   }
 }
 
-function correctAnswer()
+function correctAnswer(answer)
 {
   alert(`You got it right! The answer is ${answer}.`);
   score++;
 }
 
-function wrongAnswer()
+function wrongAnswer(answer, rightAnswer)
 {
-  alert(`Better luck next time! The correct answer is ${rightAnswer}`);
+  alert(`Better luck next time! You picked ${answer} but the correct answer is ${rightAnswer}`);
 }
 
 function nextQuestion() {
