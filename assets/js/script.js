@@ -11,25 +11,25 @@ let total = document.getElementById("total");
 const questions = {
   1: 'Which band released the song "I Want It That Way" in 1999?',
   2: 'Who sang the song "Sk8er Boi"?',
-  3: '',
-  4: '',
-  5: ''
+  3: 'What genre is known for artists like AC/DC and Led Zeppelin?',
+  4: 'What year was the song "Hips Don\'t Lie" by Shakira released in?',
+  5: 'Which of these songs was not released by Eminem?'
 }
 
 const answers = {
   1: ['NSYNC', 'Backstreet Boys', 'Westlife', 'Boyzone'],
   2: ['Avril Lavigne', 'Britney Spears', 'Hilary Duff', 'P!nk'],
-  3: ['', '', '', ''],
-  4: ['', '', '', ''],
-  5: ['', '', '', '']
+  3: ['Pop', 'Country', 'Rock', 'Rap'],
+  4: ['2000', '2003', '2006', '2009'],
+  5: ['Lose Yourself', 'Not Afraid', 'The Real Slim Shady', 'In Da Club']
 }
 
 const rightAnswers = {
   1: 'Backstreet Boys',
   2: 'Avril Lavigne',
-  3: '',
-  4: '',
-  5: ''
+  3: 'Rock',
+  4: '2006',
+  5: 'In Da Club'
 }
 
 let maxQuestionNumber = Object.keys(questions).length;
@@ -77,7 +77,7 @@ function nextQuestion() {
 }
 
 function endGame() {
-  total.innerText = `Your final score is ${score}`;
+  score.innerHTML = '<p>Your final score is ' + score + '</p>';
   question.innerText = "Thanks for playing!";
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].style.display = "none";
