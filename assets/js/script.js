@@ -49,14 +49,21 @@ function startGame() {
 
 function checkChosenAnswer(event) {
   let answer = event.target.innerText;
+  let possibleAnswers = answers[questionNumber];
   let rightAnswer = rightAnswers[questionNumber];
+  //if the user picked the right answer
   if (answer === rightAnswer)
   {
     alert(`You got it right! The answer is ${answer}.`);
     score++;
   }
-  else {
+  //if the user picked the wrong answer
+  else if (answer in possibleAnswers) {
     alert(`Better luck next time! The correct answer is ${rightAnswer}`)
+  }
+  else {
+    alert(`Invalid answer ${answer}!`);
+    throw `Invalid answer ${answer}! Quiz cancelled!`
   }
   questionNumber++;
   if (questionNumber <= maxQuestionNumber)
