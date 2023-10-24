@@ -58,7 +58,7 @@ function checkChosenAnswer() {
     score++;
   }
   //if the user picked the wrong answer
-  else if (answer in possibleAnswers) {
+  else if (possibleAnswers.includes(answer)) {
     alert(`Better luck next time! The correct answer is ${rightAnswer}`);
   }
   else {
@@ -84,7 +84,8 @@ function nextQuestion() {
 }
 
 function endGame() {
-  score.innerHTML = '<p>Your final score is ' + score + '</p>';
+  let scoreArea = document.getElementById("score");
+  scoreArea.innerText = `Your final score is ${score}`;
   question.innerText = "Thanks for playing!";
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].style.display = "none";
