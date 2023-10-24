@@ -1,4 +1,13 @@
-.heading, .score-area, .question-area, .answers {
+* {
+  margin: 0;
+}
+
+.heading {
+  font-size: 250%;
+}
+
+.heading, .game-area {
+  margin-top: 30px;
   text-align: center;
   font-family: "Arial";
 }
