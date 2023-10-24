@@ -3,6 +3,7 @@
 // These are the possible answers to each question
 
 let questionNumber = 1;
+let score = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
   startGame();
@@ -11,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function() {
 function startGame() {
   let question = document.getElementById("question");
   let buttons = document.getElementsByTagName("button");
+  let total = document.getElementById("total");
+
+  total.innerText = score;
 
   question.innerText = questions[questionNumber];
 
