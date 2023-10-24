@@ -4,22 +4,16 @@
 
 let questionNumber = 1;
 let score = 0;
+let question = document.getElementById("question");
+let buttons = document.getElementsByTagName("button");
+let total = document.getElementById("total");
 
 document.addEventListener("DOMContentLoaded", function() {
   startGame();
 });
 
 function startGame() {
-  let question = document.getElementById("question");
-  let buttons = document.getElementsByTagName("button");
-  let total = document.getElementById("total");
-
-  total.innerText = score;
-
-  question.innerText = questions[questionNumber];
-
   for (let i = 0; i < buttons.length; i++) {
-    buttons[i].innerText = answers[questionNumber][i];
     buttons[i].addEventListener("click", function() {
       checkChosenAnswer(event);
     });
@@ -32,10 +26,12 @@ function checkChosenAnswer(event) {
   if (answer === rightAnswer)
   {
     alert(`You got it right! The answer is ${answer}.`);
+    score++;
   }
   else {
     alert(`Better luck next time! The correct answer is ${rightAnswer}`)
   }
+  questionNumber++;
 }
 
 const questions = {
