@@ -86,7 +86,7 @@ function wrongAnswer(answer, rightAnswer)
 
 function nextQuestion() {
   total.innerText = score;
-  question.innerText = questions[questionNumber];
+  question.innerText = "Question " + questionNumber + ": " + questions[questionNumber];
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].innerText = answers[questionNumber][i];
   }
