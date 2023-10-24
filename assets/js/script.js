@@ -40,14 +40,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function startGame() {
   for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", e => function() {
-      checkChosenAnswer(e);
+    buttons[i].addEventListener("click", function() {
+      checkChosenAnswer();
     });
   }
   nextQuestion();
 }
 
-function checkChosenAnswer(event) {
+function checkChosenAnswer() {
   let answer = event.target.innerText;
   let possibleAnswers = answers[questionNumber];
   let rightAnswer = rightAnswers[questionNumber];
