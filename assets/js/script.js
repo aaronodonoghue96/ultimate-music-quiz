@@ -28,7 +28,14 @@ function startGame() {
 
 function checkChosenAnswer(event) {
   let answer = event.target.innerText;
-  alert(`You clicked ${answer}`);
+  let rightAnswer = rightAnswers[questionNumber];
+  if (answer === rightAnswer)
+  {
+    alert(`You got it right! The answer is ${answer}.`);
+  }
+  else {
+    alert(`Better luck next time! The correct answer is ${rightAnswer}`)
+  }
 }
 
 const questions = {
