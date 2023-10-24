@@ -54,15 +54,13 @@ function checkChosenAnswer() {
   //if the user picked the right answer
   if (answer === rightAnswer)
   {
-    alert(`You got it right! The answer is ${answer}.`);
-    score++;
+    correctAnswer();
   }
   //if the user picked the wrong answer
   else if (possibleAnswers.includes(answer)) {
-    alert(`Better luck next time! The correct answer is ${rightAnswer}`);
+    wrongAnswer();
   }
   else {
-    alert(`Invalid answer ${answer}!`);
     throw `Invalid answer ${answer}! Quiz cancelled!`;
   }
   questionNumber++;
@@ -73,6 +71,17 @@ function checkChosenAnswer() {
   else {
     endGame();
   }
+}
+
+function correctAnswer()
+{
+  alert(`You got it right! The answer is ${answer}.`);
+  score++;
+}
+
+function wrongAnswer()
+{
+  alert(`Better luck next time! The correct answer is ${rightAnswer}`);
 }
 
 function nextQuestion() {
