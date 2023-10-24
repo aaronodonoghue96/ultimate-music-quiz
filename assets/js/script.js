@@ -36,7 +36,7 @@ const questions = {
   2: '',
   3: '',
   4: '',
-  5: '',
+  5: ''
 }
 
 const answers = {
@@ -45,4 +45,12 @@ const answers = {
   3: ['', '', '', ''],
   4: ['', '', '', ''],
   5: ['', '', '', '']
+}
+
+const rightAnswers = {
+  1: 'Backstreet Boys',
+  2: '',
+  3: '',
+  4: '',
+  5: ''
 }
