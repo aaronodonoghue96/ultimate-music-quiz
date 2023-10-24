@@ -1,3 +1,4 @@
 .heading, .score-area, .question-area, .answers {
   text-align: center;
+  font-family: "Arial";
 }
