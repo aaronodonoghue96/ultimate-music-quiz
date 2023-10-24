@@ -8,6 +8,8 @@ let question = document.getElementById("question");
 let buttons = document.getElementsByTagName("button");
 let total = document.getElementById("total");
 
+let maxQuestionNumber = Object.keys(questions).length;
+
 document.addEventListener("DOMContentLoaded", function() {
   startGame();
 });
@@ -18,6 +20,7 @@ function startGame() {
       checkChosenAnswer(event);
     });
   }
+  nextQuestion()
 }
 
 function checkChosenAnswer(event) {
@@ -32,6 +35,18 @@ function checkChosenAnswer(event) {
     alert(`Better luck next time! The correct answer is ${rightAnswer}`)
   }
   questionNumber++;
+  if (questionNumber <= maxQuestionNumber)
+  {
+    nextQuestion();
+  }
+}
+
+function nextQuestion() {
+  total.innerText = score;
+  question.innerText = questions[questionNumber];
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].innerText = answers[questionNumber][i];
+  }
 }
 
 const questions = {
