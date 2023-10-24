@@ -8,6 +8,30 @@ let question = document.getElementById("question");
 let buttons = document.getElementsByTagName("button");
 let total = document.getElementById("total");
 
+const questions = {
+  1: 'Which band released the song "I Want It That Way" in 1999?',
+  2: 'Who sang the song "Sk8er Boi"?',
+  3: '',
+  4: '',
+  5: ''
+}
+
+const answers = {
+  1: ['NSYNC', 'Backstreet Boys', 'Westlife', 'Boyzone'],
+  2: ['Avril Lavigne', 'Britney Spears', 'Hilary Duff', 'P!nk'],
+  3: ['', '', '', ''],
+  4: ['', '', '', ''],
+  5: ['', '', '', '']
+}
+
+const rightAnswers = {
+  1: 'Backstreet Boys',
+  2: 'Avril Lavigne',
+  3: '',
+  4: '',
+  5: ''
+}
+
 let maxQuestionNumber = Object.keys(questions).length;
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -39,6 +63,9 @@ function checkChosenAnswer(event) {
   {
     nextQuestion();
   }
+  else {
+    endGame();
+  }
 }
 
 function nextQuestion() {
@@ -49,26 +76,10 @@ function nextQuestion() {
   }
 }
 
-const questions = {
-  1: 'Which band released the song "I Want It That Way" in 1999?',
-  2: '',
-  3: '',
-  4: '',
-  5: ''
-}
-
-const answers = {
-  1: ['NSYNC', 'Backstreet Boys', 'Westlife', 'Boyzone'],
-  2: ['', '', '', ''],
-  3: ['', '', '', ''],
-  4: ['', '', '', ''],
-  5: ['', '', '', '']
-}
-
-const rightAnswers = {
-  1: 'Backstreet Boys',
-  2: '',
-  3: '',
-  4: '',
-  5: ''
+function endGame() {
+  total.innerText = `Your final score is ${score}`;
+  question.innerText = "Thanks for playing!";
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].style.display = "none";
+  }
 }
