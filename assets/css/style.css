@@ -16,3 +16,13 @@
   background-color: lightgrey;
   height: 100vh;
 }
+
+.score-area {
+  padding: 40px 0 20px 0;
+  font-size: 180%;
+}
+
+#question {
+  padding: 20px 0;
+  font-size: 160%;
+}
