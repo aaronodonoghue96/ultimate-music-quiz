@@ -11,3 +11,8 @@
   text-align: center;
   font-family: "Arial";
 }
+
+.game-area {
+  background-color: lightgrey;
+  height: 100vh;
+}
