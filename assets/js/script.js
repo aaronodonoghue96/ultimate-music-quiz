@@ -217,10 +217,11 @@ function nextQuestion() {
 }
 
 function endGame() {
-  let scoreArea = document.getElementById("score");
-  scoreArea.innerText = `Your final score is ${score}`;
   question.innerText = "Thanks for playing!";
+  timer.style.display = "none";
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].style.display = "none";
   }
+  playButton.style.display = "inline";
+  playButton.innerText = "Play Again";
 }
