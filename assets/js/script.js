@@ -109,7 +109,7 @@ const rightAnswers = {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
-  startGame();
+  mainMenu();
 });
 
 function mainMenu() {
