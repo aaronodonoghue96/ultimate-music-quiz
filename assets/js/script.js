@@ -173,6 +173,15 @@ function wrongAnswer(answer, rightAnswer)
   question.innerText = `Better luck next time! You picked ${answer} but the correct answer is ${rightAnswer}`;
 }
 
+function outOfTime()
+{
+  question.innerText = `You ran out of time! The correct answer was ${rightAnswers[questionNumber]}`;
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].style.display = "none";
+  }
+  nextButton.style.display = "inline";
+}
+
 function nextQuestion() {
   total.innerText = score;
   question.innerText = "Question " + questionNumber + ": " + questions[questionNumber];
