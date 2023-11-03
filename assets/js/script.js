@@ -16,6 +16,28 @@ let timerArea = document.getElementById("timer");
 let quizLengthSelection = document.getElementById("quiz-length-selection");
 let quizLengthOptions = document.getElementsByName('quiz-length');
 let chosenLength;
+let interval;
+let secondsLeft = 15;
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function() {
+    clearInterval(interval);
+    checkChosenAnswer();
+  });
+}
+
+playButton.addEventListener("click", function() {
+  startGame();
+});
+
+nextButton.addEventListener("click", function() {
+  nextQuestion();
+});
+
+quitButton.addEventListener("click", function() {
+  clearInterval(interval);
+  mainMenu();
+})
 
 const questions = {
   1: 'Which band released the song "I Want It That Way" in 1999?',
