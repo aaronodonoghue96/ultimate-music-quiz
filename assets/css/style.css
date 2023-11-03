@@ -101,3 +101,19 @@ button {
   background-color: dodgerblue;
   border-color: navy;
 }
+
+#quit-button {
+  background-color: grey;
+  border-color: black;
+}
+
+#play-button {
+  background-color: yellow;
+  border-color: goldenrod;
+  color: black;
+}
+
+#next-button {
+  background-color: purple;
+  border-color: indigo;
+}
