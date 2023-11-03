@@ -60,17 +60,6 @@ label {
   font-size: 160%;
 }
 
-.answer-button {
-  border-radius: 50%;
-  border: 6px solid;
-  color: white;
-  width: 200px;
-  height: 150px;
-  margin: 30px;
-  font-size: 150%;
-  vertical-align: middle;
-}
-
 button {
   border-radius: 50%;
   border: 6px solid;
