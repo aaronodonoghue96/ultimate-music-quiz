@@ -3,6 +3,7 @@
 }
 
 body {
+  max-width: 100%;
   background-color: lightgrey
 }
 
@@ -105,7 +106,7 @@ button {
   color: white;
   width: 200px;
   height: 100px;
-  margin: 30px;
+  margin: 20px;
   font-size: 150%;
   vertical-align: middle;
 }
@@ -144,4 +145,72 @@ button {
 #next-button {
   background-color: purple;
   border-color: indigo;
+}
+
+/* Media query for tablets */
+@media screen and (max-width:768px) {
+  img {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+  }
+
+  .heading {
+    font-size: 200%;
+  }
+
+  .score-area, .timer-area {
+    font-size: 150%;
+  }
+
+  #question {
+    font-size: 140%;
+  }
+
+  button {
+    width: 140px;
+    height: 70px;
+    margin: 10px;
+    font-size: 125%;
+  }
+}
+
+/* Media query for mobiles */
+@media screen and (max-width:425px)
+{
+  img {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+
+  .heading {
+    font-size: 165%;
+  }
+
+  .score-area, .timer-area {
+    padding: 10px 0;
+    font-size: 125%;
+  }
+
+  #question {
+    font-size: 120%;
+  }
+
+  button {
+    width: 110px;
+    height: 55px;
+    margin: 5px;
+    font-size: 85%;
+  }
+
+  label {
+    padding: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  /* Extra padding needed as '5' is only one digit, and the label should be the
+      same size as the others */
+  #beginner + label {
+    padding: 8px 12px;
+  }
 }
