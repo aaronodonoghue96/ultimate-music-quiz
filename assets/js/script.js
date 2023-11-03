@@ -155,14 +155,10 @@ function checkChosenAnswer() {
   else {
     throw `Invalid answer ${answer}! Quiz cancelled!`;
   }
-  questionNumber++;
-  if (questionNumber <= maxQuestionNumber)
-  {
-    nextQuestion();
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].style.display = "none";
   }
-  else {
-    endGame();
-  }
+  nextButton.style.display = "inline";
 }
 
 function correctAnswer(answer)
