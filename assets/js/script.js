@@ -10,6 +10,12 @@ let nextButton = document.getElementById("next-button");
 let playButton = document.getElementById("play-button");
 let quitButton = document.getElementById("quit-button");
 let total = document.getElementById("total");
+let scoreArea = document.getElementById("score");
+let time = document.getElementById("time");
+let timerArea = document.getElementById("timer");
+let quizLengthSelection = document.getElementById("quiz-length-selection");
+let quizLengthOptions = document.getElementsByName('quiz-length');
+let chosenLength;
 
 const questions = {
   1: 'Which band released the song "I Want It That Way" in 1999?',
