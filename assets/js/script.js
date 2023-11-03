@@ -127,11 +127,15 @@ function mainMenu() {
 }
 
 function startGame() {
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function() {
-      checkChosenAnswer();
-    });
+  for(var i = 0; i < quizLengthOptions.length; i++){
+      if(quizLengthOptions[i].checked){
+          chosenLength = quizLengthOptions[i].value;
+      }
   }
+  questionNumber = 0;
+  score = 0;
+  total.innerText = score;
+  quizLengthSelection.style.display = "none";
   nextQuestion();
 }
 
