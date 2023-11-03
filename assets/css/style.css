@@ -45,6 +45,45 @@ label {
   color: white;
 }
 
+/* Extra padding needed as '5' is only one digit, and the label should be the
+    same size as the others */
+#beginner + label {
+  border: 5px solid darkred;
+  background-color: darkred;
+  padding: 15px 19px;
+}
+
+#beginner:checked + label {
+  background-color: red;
+}
+
+#intermediate + label {
+  border: 5px solid saddlebrown;
+  background-color: saddlebrown;
+}
+
+#intermediate:checked + label {
+  background-color: darkorange;
+}
+
+#advanced + label {
+  border: 5px solid darkgreen;
+  background-color: darkgreen;
+}
+
+#advanced:checked + label {
+  background-color: limegreen;
+}
+
+#expert + label {
+  border: 5px solid navy;
+  background-color: navy;
+}
+
+#expert:checked + label {
+  background-color: dodgerblue;
+}
+
 .game-area {
   margin-top: 20px;
   height: 100%;
