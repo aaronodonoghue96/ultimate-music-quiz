@@ -50,13 +50,13 @@ label {
   height: 100%;
 }
 
-.score-area {
-  padding: 40px 0 20px 0;
+.score-area, .timer-area {
+  padding: 15px 0;
   font-size: 180%;
 }
 
 #question {
-  padding: 20px 0;
+  margin: 10px;
   font-size: 160%;
 }
 
