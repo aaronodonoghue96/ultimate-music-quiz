@@ -183,10 +183,21 @@ function outOfTime()
 }
 
 function nextQuestion() {
-  total.innerText = score;
-  question.innerText = "Question " + questionNumber + ": " + questions[questionNumber];
+  secondsLeft = 15;
+  time.innerText = secondsLeft;
   for (let i = 0; i < buttons.length; i++) {
-    buttons[i].innerText = answers[questionNumber][i];
+    buttons[i].style.display = "inline";
+  }
+  scoreArea.style.display = "inline";
+  timerArea.style.display = "inline";
+  playButton.style.display = "none";
+  nextButton.style.display = "none";
+  quitButton.style.display = "inline";
+
+  questionNumber++;
+  if (questionNumber > chosenLength)
+  {
+    endGame();
   }
 }
 
