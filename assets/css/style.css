@@ -147,8 +147,18 @@ button {
   border-color: indigo;
 }
 
+/* Media query for laptops */
+@media screen and (max-width:1024px) {
+  button {
+    width: 170px;
+    height: 85px;
+    margin: 10px;
+    font-size: 140%;
+  }
+}
+
 /* Media query for tablets */
-@media screen and (max-width:768px) {
+@media screen and (max-width:784px) {
   img {
     max-width: 2.5rem;
     max-height: 2.5rem;
@@ -168,13 +178,6 @@ button {
 
   .answers {
     column-count: 2;
-  }
-
-  button {
-    width: 180px;
-    height: 90px;
-    margin: 15px;
-    font-size: 140%;
   }
 }
 
@@ -200,8 +203,8 @@ button {
   }
 
   button {
-    width: 120px;
-    height: 60px;
+    width: 130px;
+    height: 65px;
     margin: 5px;
     font-size: 90%;
   }
