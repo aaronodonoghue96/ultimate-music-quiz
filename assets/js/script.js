@@ -2,10 +2,13 @@
 // Get the button elements and add event listeners to them
 // These are the possible answers to each question
 
-let questionNumber = 1;
+let questionNumber = 0;
 let score = 0;
 let question = document.getElementById("question");
-let buttons = document.getElementsByTagName("button");
+let buttons = document.getElementsByClassName("answer-button");
+let nextButton = document.getElementById("next-button");
+let playButton = document.getElementById("play-button");
+let quitButton = document.getElementById("quit-button");
 let total = document.getElementById("total");
 
 const questions = {
