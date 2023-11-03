@@ -112,6 +112,20 @@ document.addEventListener("DOMContentLoaded", function() {
   startGame();
 });
 
+function mainMenu() {
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].style.display = "none";
+  }
+  scoreArea.style.display = "none";
+  timerArea.style.display = "none";
+  nextButton.style.display = "none";
+  quitButton.style.display = "none";
+  playButton.style.display = "inline";
+  playButton.innerText = "Play";
+  question.innerText = "Welcome to the Ultimate Music Quiz!";
+  quizLengthSelection.style.display = "block";
+}
+
 function startGame() {
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function() {
