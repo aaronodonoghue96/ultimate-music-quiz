@@ -163,13 +163,14 @@ function checkChosenAnswer() {
 
 function correctAnswer(answer)
 {
-  alert(`You got it right! The answer is ${answer}.`);
-  score++;
+  question.innerText = `You got it right! The answer is ${answer}.`;
+  score += Number.parseInt(time.innerText); //add score to total
+  total.innerText = score;
 }
 
 function wrongAnswer(answer, rightAnswer)
 {
-  alert(`Better luck next time! You picked ${answer} but the correct answer is ${rightAnswer}`);
+  question.innerText = `Better luck next time! You picked ${answer} but the correct answer is ${rightAnswer}`;
 }
 
 function nextQuestion() {
