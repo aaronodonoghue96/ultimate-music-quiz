@@ -199,6 +199,21 @@ function nextQuestion() {
   {
     endGame();
   }
+  else {
+    question.innerText = "Question " + questionNumber + ": " + questions[questionNumber];
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].innerText = answers[questionNumber][i];
+      buttons[i].title = answers[questionNumber][i];
+    }
+    interval = setInterval(function(){
+      secondsLeft--;
+      time.innerText=secondsLeft;
+      if (secondsLeft === 0){
+        clearInterval(interval);
+        outOfTime();
+      }
+    }, 1000);
+  }
 }
 
 function endGame() {
