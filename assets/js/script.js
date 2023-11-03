@@ -108,8 +108,6 @@ const rightAnswers = {
   20: 'Prince'
 };
 
-let maxQuestionNumber = Object.keys(questions).length;
-
 document.addEventListener("DOMContentLoaded", function() {
   startGame();
 });
