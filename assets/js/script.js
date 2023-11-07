@@ -2,8 +2,8 @@
 // Get the button elements and add event listeners to them
 // These are the possible answers to each question
 
-let questionNumber = 0;
-let score = 0;
+/* Get all DOM elements that will be used in the quiz so they can be accessed
+  during the quiz */
 let question = document.getElementById("question");
 let buttons = document.getElementsByClassName("answer-button");
 let nextButton = document.getElementById("next-button");
@@ -15,10 +15,15 @@ let time = document.getElementById("time");
 let timerArea = document.getElementById("timer");
 let quizLengthSelection = document.getElementById("quiz-length-selection");
 let quizLengthOptions = document.getElementsByName('quiz-length');
+
+/* Define chosen length variable, which will be determined by the value the
+  user chose before starting the game, the timer interval which restarts on
+  each new question, and the amount of time per question. */
 let chosenLength;
 let interval;
 let secondsLeft = 15;
 
+// Add event listener for all answer buttons to stop timer and check chosen answer
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function() {
     clearInterval(interval);
@@ -26,19 +31,23 @@ for (let i = 0; i < buttons.length; i++) {
   });
 }
 
+// Add event listener for Play button to start game
 playButton.addEventListener("click", function() {
   startGame();
 });
 
+// Add event listener for Next button to advance to next question
 nextButton.addEventListener("click", function() {
   nextQuestion();
 });
 
+// Add event listener for Quit button to stop timer and return to main menu
 quitButton.addEventListener("click", function() {
   clearInterval(interval);
   mainMenu();
 })
 
+// The list of questions asked in the quiz
 const questions = {
   1: 'Which band released the song "I Want It That Way" in 1999?',
   2: 'Who sang the song "Sk8er Boi"?',
@@ -62,6 +71,7 @@ const questions = {
   20: 'Which singer changed his name to an unpronounceable symbol?'
 };
 
+// The list of possible answers for each question
 const answers = {
   1: ['NSYNC', 'Backstreet Boys', 'Westlife', 'Boyzone'],
   2: ['Avril Lavigne', 'Britney Spears', 'Hilary Duff', 'P!nk'],
@@ -85,6 +95,7 @@ const answers = {
   20: ['David Bowie', 'Prince', 'Elton John', 'Michael Jackson']
 };
 
+// The list of correct answers for each question
 const rightAnswers = {
   1: 'Backstreet Boys',
   2: 'Avril Lavigne',
@@ -108,10 +119,13 @@ const rightAnswers = {
   20: 'Prince'
 };
 
+// Load up the main menu when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", function() {
   mainMenu();
 });
 
+/* Display the main menu. Only show the opening sentence "Welcome to the
+  Ultimate Music Quiz!", the play button, and the quiz length selection buttons */
 function mainMenu() {
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].style.display = "none";
@@ -126,6 +140,9 @@ function mainMenu() {
   quizLengthSelection.style.display = "block";
 }
 
+/* Start a new game whose length is determined by the quiz length chosen by
+  the user. Reset the question number and score at the start of each game.
+  Hide the quiz length options, and ask the first question. */
 function startGame() {
   for(var i = 0; i < quizLengthOptions.length; i++){
       if(quizLengthOptions[i].checked){
@@ -139,28 +156,32 @@ function startGame() {
   nextQuestion();
 }
 
+/* Check the answer given by the user to see is it correct */
 function checkChosenAnswer() {
   let answer = event.target.innerText;
   let possibleAnswers = answers[questionNumber];
   let rightAnswer = rightAnswers[questionNumber];
-  //if the user picked the right answer
+  // if the user picked the right answer
   if (answer === rightAnswer)
   {
     correctAnswer(answer);
   }
-  //if the user picked the wrong answer
+  // if the user picked the wrong answer
   else if (possibleAnswers.includes(answer)) {
     wrongAnswer(answer, rightAnswer);
   }
   else {
     throw `Invalid answer ${answer}! Quiz cancelled!`;
   }
+  // hide the answer buttons and show the Next button
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].style.display = "none";
   }
   nextButton.style.display = "inline";
 }
 
+/* Handles a correct answer by awarding points based on time remaining,
+  and gives feedback to the user */
 function correctAnswer(answer)
 {
   question.innerText = `You got it right! The answer is ${answer}.`;
@@ -168,20 +189,32 @@ function correctAnswer(answer)
   total.innerText = score;
 }
 
+/* Handles a wrong answer by giving feedback to the user and providing the
+  correct answer but awarding no points */
 function wrongAnswer(answer, rightAnswer)
 {
   question.innerText = `Better luck next time! You picked ${answer} but the correct answer is ${rightAnswer}`;
 }
 
+/* Handles the user running out of time by giving feedback to them and providing
+  the correct answer but awarding no points */
 function outOfTime()
 {
   question.innerText = `You ran out of time! The correct answer was ${rightAnswers[questionNumber]}`;
+
+  // hide answer buttons and show Next button
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].style.display = "none";
   }
   nextButton.style.display = "inline";
 }
 
+/* Display next question, show score, timer, answer buttons and Quit button,
+  hide Play and Next buttons. Increase question number and display it alongside
+  the question. Provide the four possible answers and start the timer.
+
+  If the user runs out of time, handle that. If the last question has been
+  answered, display the end screen. */
 function nextQuestion() {
   secondsLeft = 15;
   time.innerText = secondsLeft;
@@ -216,6 +249,9 @@ function nextQuestion() {
   }
 }
 
+/* Hide the timer and all buttons except Quit, and Play, which now serves as
+  Play Again, which will start a new game of the same length, and display a
+  message thanking the user for playing. */
 function endGame() {
   question.innerText = "Thanks for playing!";
   timer.style.display = "none";
