@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags, link to CSS, and title -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,34 +9,44 @@
     <title>Ultimate Music Quiz</title>
   </head>
   <body>
+    <!-- Logo -->
     <h1 class="heading">
       <img src="assets/images/record.webp">Ultimate Music Quiz<img src="assets/images/record.webp">
     </h1>
+    <!-- Main area of the quiz where score, timer, questions and buttons are -->
     <main class="game-area">
+      <!-- Score -->
       <div class="score-area">
         <p id="score">Score: <span id="total"></span></p>
       </div>
+      <!-- Timer -->
       <div class="timer-area">
         <p id="timer">Time: <span id="time"></span></p>
       </div>
+      <!-- Question -->
       <div class="question-area">
         <p id="question"></p>
       </div>
+      <!-- Answer buttons for each question -->
       <div class="answers">
         <button type="button" id="answer1" class="answer-button">Answer1</button>
         <button type="button" id="answer2" class="answer-button">Answer2</button>
         <button type="button" id="answer3" class="answer-button">Answer3</button>
         <button type="button" id="answer4" class="answer-button">Answer4</button>
       </div>
+      <!-- Next question button -->
       <div class="next-button-area">
         <button type="button" id="next-button">Next</button>
       </div>
+      <!-- Play button -->
       <div class="play-button-area">
         <button type="button" id="play-button">Play</button>
       </div>
+      <!-- Quit Game button (return to main menu) -->
       <div class="quit-button-area">
         <button type="button" id="quit-button">Quit Game</button>
       </div>
+      <!-- Radio buttons to choose number of questions in game -->
       <div id="quiz-length-selection">
         <p>How many questions would you like to take on in this quiz?</p>
         <input type="radio" id="beginner" name="quiz-length" value="5" checked>
@@ -48,6 +59,7 @@
         <label for="expert">20</label>
       </div>
     </main>
+    <!-- Link to JavaScript file -->
     <script src="assets/js/script.js" type="text/javascript"></script>
   </body>
 </html>

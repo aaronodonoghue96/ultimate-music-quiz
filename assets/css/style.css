@@ -1,3 +1,4 @@
+/* Remove default margins */
 * {
   margin: 0;
 }
@@ -7,11 +8,13 @@ body {
   background-color: lightgrey
 }
 
+/* Logo image */
 img {
   max-width: 3rem;
   max-height: 3rem;
 }
 
+/* Logo text */
 .heading {
   font-size: 250%;
   padding: 20px 0;
@@ -24,6 +27,7 @@ img {
   font-family: "Arial";
 }
 
+/* Quiz length selection area */
 #quiz-length-selection {
   height: 140px;
 }
@@ -33,6 +37,7 @@ img {
   margin: 30px 15px;
 }
 
+/* Style radio buttons to look like round clickable buttons with text */
 input[type="radio"] {
   display: none;
 }
@@ -45,6 +50,8 @@ label {
   margin-right: 15px;
   color: white;
 }
+
+/* Quiz length selection radio buttons - colour when unselected and selected */
 
 /* Extra padding needed as '5' is only one digit, and the label should be the
     same size as the others */
@@ -85,21 +92,25 @@ label {
   background-color: dodgerblue;
 }
 
+/* Main game area size - default */
 .game-area {
   margin-top: 20px;
   height: 100%;
 }
 
+/* Score and Timer text size - default */
 .score-area, .timer-area {
   padding: 15px 0;
   font-size: 180%;
 }
 
+/* Question text size - default */
 #question {
   margin: 10px;
   font-size: 160%;
 }
 
+/* All buttons - size, text and shape */
 button {
   border-radius: 50%;
   border: 6px solid;
@@ -111,6 +122,7 @@ button {
   vertical-align: middle;
 }
 
+/* Answer buttons - colour */
 #answer1 {
   background-color: red;
   border-color: darkred;
@@ -131,6 +143,8 @@ button {
   border-color: navy;
 }
 
+/* Quit, Play and Next buttons - colour */
+
 #quit-button {
   background-color: grey;
   border-color: black;
@@ -147,7 +161,8 @@ button {
   border-color: indigo;
 }
 
-/* Media query for laptops */
+/* Media query to set the size of buttons for both laptops and
+  tablets*/
 @media screen and (max-width:1024px) {
   button {
     width: 170px;
@@ -157,7 +172,8 @@ button {
   }
 }
 
-/* Media query for tablets */
+/* Media query for tablets - make logo and text smaller to fit on
+  medium size screens */
 @media screen and (max-width:784px) {
   img {
     max-width: 2.5rem;
@@ -176,12 +192,15 @@ button {
     font-size: 140%;
   }
 
+  /* Makes sure answers display as a 2x2 grid, rather than 3 on the first
+    line and 1 on the second */
   .answers {
     column-count: 2;
   }
 }
 
-/* Media query for mobiles */
+/* Media query for mobiles - make logo, buttons and text smaller to fit
+  on small screens */
 @media screen and (max-width:425px)
 {
   img {
