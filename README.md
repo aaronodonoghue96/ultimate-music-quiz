@@ -63,10 +63,18 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 - The answer buttons for the quiz, which are populated at the start of each question with the four possible answers for that question. Once one of these is selected, the timer will stop, and the feedback screen will appear to tell the player if their answer is correct or incorrect, and give them the options to proceed or quit.
 
 ### Quit Game Button:
+![Quit Game Button](assets/screenshots/quit_game_button.png)
+- The Quit Game button, which will return the player to the main menu, stop and reset the timer, and reset the score and questions.
 
 ### Feedback:
+![Feedback for Right Answer](assets/screenshots/feedback_right.png)
+![Feedback for Wrong Answer](assets/screenshots/feedback_wrong.png)
+![Feedback for Out Of Time](assets/screenshots/out_of_time.png)
+- The feedback given to the user in the cases of giving a correct answer, and incorrect answer, and running out of time for a question respectively.
 
 ### Next Button:
+![Next Button](assets/screenshots/next_button.png)
+- The Next button, which will load the next question onto the screen with a new set of possible answers, and a fresh 15 seconds on the timer to answer the question. If there is no next question (i.e. the last question has been answered), this button will instead take the player to the end game screen, where they are shown their final score, thanked for playing, and have the option to play again or quit to the main menu.
 
 ### Play Again Button:
 ![Play Again Button](assets/screenshots/play_again_button.png)
