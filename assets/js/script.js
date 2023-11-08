@@ -23,6 +23,10 @@ let chosenLength;
 let interval;
 let secondsLeft = 15;
 
+/* Define questionNumber and score variables */
+let questionNumber;
+let score;
+
 // Add event listener for all answer buttons to stop timer and check chosen answer
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function() {
@@ -45,7 +49,7 @@ nextButton.addEventListener("click", function() {
 quitButton.addEventListener("click", function() {
   clearInterval(interval);
   mainMenu();
-})
+});
 
 // The list of questions asked in the quiz
 const questions = {
@@ -254,7 +258,7 @@ function nextQuestion() {
   message thanking the user for playing. */
 function endGame() {
   question.innerText = "Thanks for playing!";
-  timer.style.display = "none";
+  timerArea.style.display = "none";
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].style.display = "none";
   }
