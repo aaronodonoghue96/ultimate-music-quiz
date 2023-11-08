@@ -71,7 +71,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 - The quiz length selection options, with images of each of the four options selected.
 
 ### Play Button:
-![Play Button](assets/screenshots/initial_play_button.png)
+![Play Button](assets/screenshots/play_button.png)
 - The Play button, used to start the game with the length chosen in the quiz length selection.
 
 ### Score:
@@ -99,7 +99,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 
 ### Next Button:
 ![Next Button](assets/screenshots/next_button.png)
-- The Next button, which will load the next question onto the screen with a new set of possible answers, and a fresh 15 seconds on the timer to answer the question. If there is no next question (i.e. the last question has been answered), this button will instead take the player to the end game screen, where they are shown their final score, thanked for playing, and have the option to quit to the main menu to start again.
+- The Next button, which will load the next question onto the screen with a new set of possible answers, and a fresh 15 seconds on the timer to answer the question. If there is no next question (i.e. the last question has been answered), this button will instead take the player to the end game screen, where they are shown their final score, thanked for playing, and have the option to quit to the main menu to start a new quiz.
 
 ### Future Features:
 Some features I would like to add to this quiz in the future include:
