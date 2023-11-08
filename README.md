@@ -39,10 +39,10 @@ The website has just a single page, which is responsive, and has a favicon, a lo
   - When the game is over, the user is shown their final score, a message to thank them for playing the game, and the Play button (which now says "Play Again"), which will restart a new game of the same length, and the Quit Game button, which will return the user to the main menu.
 
 ### Quiz Length Selection Options:
-![5 Questions Selected](assets/screenshots/quiz_length_selection_5.png)
-![10 Questions Selected](assets/screenshots/quiz_length_selection_10.png)
-![15 Questions Selected](assets/screenshots/quiz_length_selection_15.png)
-![20 Questions Selected](assets/screenshots/quiz_length_selection_20.png)
+![5 Questions Selected](assets/screenshots/quiz_length_selection_buttons_5.png)
+![10 Questions Selected](assets/screenshots/quiz_length_selection_buttons_10.png)
+![15 Questions Selected](assets/screenshots/quiz_length_selection_buttons_15.png)
+![20 Questions Selected](assets/screenshots/quiz_length_selection_buttons_20.png)
 - The quiz length selection options, with images of each of the four options selected.
 
 ### Play Button:
