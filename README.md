@@ -1,6 +1,10 @@
 # Ultimate Music Quiz
 
+![Ultimate Music Quiz shown on a variety of screen sizes](assets/images/ultimate-music-quiz.png)
+
 Visit the deployed site: https://aaronodonoghue96.github.io/ultimate-music-quiz/
+
+This quiz was designed for lovers of music to test their knowledge, with questions covering a wide array of genres, eras of music, and artists.
 
 ## Fixed Bugs:
 Adding 'event' to function (i.e. 'e => function(event)') in loop for adding event listeners to answer buttons caused checkAnswer() not to be called. This has been fixed by removing that piece of code and leaving both functions without parameters.
