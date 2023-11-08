@@ -35,9 +35,20 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 ![Ultimate Music Quiz end screen](assets/screenshots/end_of_game.png)
   - When the game is over, the user is shown their final score, a message to thank them for playing the game, and the Play button (which now says "Play Again"), which will restart a new game of the same length, and the Quit Game button, which will return the user to the main menu.
 
+### Quiz Length Selection Options:
+- The quiz length selection options, with images of each of the four options selected.
+![5 Questions Selected](assets/screenshots/quiz_length_selection_five.png)
+![10 Questions Selected](assets/screenshots/quiz_length_selection_ten.png)
+![15 Questions Selected](assets/screenshots/quiz_length_selection_fifteen.png)
+![20 Questions Selected](assets/screenshots/quiz_length_selection_twenty.png)
+
 ### Play Button:
+- The Play button, used to start the game with the length chosen in the quiz length selection.
+![Play Button](assets/screenshots/play_button.png)
 
 ### Score:
+- The score display, used to keep track of the player's score from correct answers, based on how quickly they gave each correct answer.
+![Score](assets/screenshots/score.png)
 
 ### Timer:
 
@@ -48,6 +59,10 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 ### Feedback:
 
 ### Next Button:
+
+### Play Again Button:
+- The Play Again variant of the Play button found at the end screen, used to start a new game of the same length as the one just completed.
+![Play Again Button](assets/screenshots/play_again_button.png)
 
 ## Technologies Used:
 
