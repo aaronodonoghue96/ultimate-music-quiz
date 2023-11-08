@@ -10,8 +10,8 @@ body {
 
 /* Logo image */
 img {
-  width: 3rem;
-  height: 3rem;
+  max-width: 3rem;
+  max-height: 3rem;
 }
 
 /* Logo text */
@@ -176,8 +176,8 @@ button {
   medium size screens */
 @media screen and (max-width:784px) {
   img {
-    width: 2.5rem;
-    height: 2.5rem;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
   }
 
   .heading {
@@ -204,8 +204,8 @@ button {
 @media screen and (max-width:425px)
 {
   img {
-    width: 2rem;
-    height: 2rem;
+    max-width: 2rem;
+    max-height: 2rem;
   }
 
   .heading {
