@@ -13,8 +13,12 @@ This quiz was designed for lovers of music to test their knowledge, with questio
 The website has just a single page, which is responsive, and has a favicon, a logo which is made up of the title with an image of vinyl record on either side, and the game area, whose contents change depending on where the player is in the quiz.
 
 ### Favicon:
+- The favicon displayed in the browser tab.
+![Favicon of a music note](assets/screenshots/favicon.png)
 
 ### Logo:
+- The logo for the quiz, consisting of the title surrounded by two vinyl records.
+![Ultimate Music Quiz logo](assets/screenshots/logo.png)
 
 ### Game Area:
 
