@@ -56,7 +56,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
  - Am I Responsive?: display website on different device types
  - GitHub Pages: deployment
 
- ## Deployment:
+## Deployment:
 
  This site is deployed using GitHub Pages - [Ultimate Music Quiz](https://aaronodonoghue96.github.io/ultimate-music-quiz/)
 
