@@ -21,7 +21,6 @@ This quiz was designed for lovers of music to test their knowledge, with questio
   - [Quit Game Button](#quit-game-button)
   - [Feedback](#feedback)
   - [Next Button](#next-button)
-  - [Play Again Button](#play-again-button)
   - [Future Features](#future-features)  
 - [Technologies Used](#technologies-used)
 - [Deployment](#deployment)
@@ -62,7 +61,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 
 ![Ultimate Music Quiz end screen](assets/screenshots/end_of_game.png)
 - End of Game
-  - When the game is over, the user is shown their final score, a message to thank them for playing the game, and the Play button (which now says "Play Again"), which will restart a new game of the same length, and the Quit Game button, which will return the user to the main menu.
+  - When the game is over, the user is shown their final score, a message to thank them for playing the game, and the Quit Game button, which will return the user to the main menu.
 
 ### Quiz Length Selection Options:
 ![5 Questions Selected](assets/screenshots/quiz_length_selection_buttons_5.png)
@@ -100,11 +99,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 
 ### Next Button:
 ![Next Button](assets/screenshots/next_button.png)
-- The Next button, which will load the next question onto the screen with a new set of possible answers, and a fresh 15 seconds on the timer to answer the question. If there is no next question (i.e. the last question has been answered), this button will instead take the player to the end game screen, where they are shown their final score, thanked for playing, and have the option to play again or quit to the main menu.
-
-### Play Again Button:
-![Play Again Button](assets/screenshots/play_again_button.png)
-- The Play Again variant of the Play button found at the end screen, used to start a new game of the same length as the one just completed.
+- The Next button, which will load the next question onto the screen with a new set of possible answers, and a fresh 15 seconds on the timer to answer the question. If there is no next question (i.e. the last question has been answered), this button will instead take the player to the end game screen, where they are shown their final score, thanked for playing, and have the option to quit to the main menu to start again.
 
 ### Future Features:
 Some features I would like to add to this quiz in the future include:
@@ -211,9 +206,8 @@ I also tested to make sure the following features worked correctly:
 - The Quit Game button takes the player back to the main menu, exiting the quiz and resetting the timer, score and question number, and allowing the user to start a new quiz from scratch and choose its length.
 - The Next button advances the player to the next question, increases the question number by 1, displays a new question with a new set of possible answers, and resets the timer to 15 seconds.
 - If the last question has just been answered, the Next button will instead take the player to the end screen.
-- The end screen displays the player's final score, a message to thank them for playing, the Play button with the text "Play Again", and the Quit Game button.
+- The end screen displays the player's final score, a message to thank them for playing, and the Quit Game button.
 - The final score will never be greater than 15 times the chosen quiz length, i.e. 75 for 5 questions, 150 for 10 questions, 225 for 15 questions, or 300 for 20 questions, and will never be less than 0.
-- Choosing Play Again will start a new quiz of the same length from scratch, with a score of 0, the timer reset to 15 seconds, and back to Question 1.
 - Choosing Quit Game will return the player to the main menu.
 
 ### Fixed Bugs:

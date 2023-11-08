@@ -254,16 +254,12 @@ function nextQuestion() {
   }
 }
 
-/* Hide the timer and all buttons except Quit, and Play, which now serves as
-  Play Again, which will start a new game of the same length, and display a
-  message thanking the user for playing. */
+/* Hide the timer and all buttons except Quit which returns you to the main menu,
+  and display a message thanking the user for playing. */
 function endGame() {
   question.innerText = "Thanks for playing!";
   timerArea.style.display = "none";
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].style.display = "none";
   }
-  playButton.style.display = "inline";
-  playButton.innerText = "Play Again";
-  playButton.title = "Play Again";
 }
