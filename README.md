@@ -70,7 +70,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 ![Feedback for Right Answer](assets/screenshots/feedback_right.png)
 ![Feedback for Wrong Answer](assets/screenshots/feedback_wrong.png)
 ![Feedback for Out Of Time](assets/screenshots/out_of_time.png)
-- The feedback given to the user in the cases of giving a correct answer, and incorrect answer, and running out of time for a question respectively.
+- Samples of the feedback given to the user in the cases of giving a correct answer, and incorrect answer, and running out of time for a question respectively.
 
 ### Next Button:
 ![Next Button](assets/screenshots/next_button.png)
