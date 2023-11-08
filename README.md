@@ -8,8 +8,34 @@ Music is known as the universal language, and it is a form of entertainment that
 
 This quiz was designed for lovers of music to test their knowledge, with questions covering a wide array of genres, eras of music, and artists. My love for music and quizzes, the wide variety, long history, and universality of music, as well as playing several music-related quizzes, such as the video game "Buzz! The Music Quiz" for the PlayStation 2, all came together to give me the idea to make a music quiz of my own using JavaScript, HTML and CSS.
 
-## Features:
+## Table of Contents
+- [Features](#features)
+  - [Favicon](#favicon)
+  - [Logo](#logo)
+  - [Game Area](#game-area)
+  - [Quiz Length Selection Options](#quiz-length-selection-options)
+  - [Play Button](#play-button)
+  - [Score](#score)
+  - [Timer](#timer)
+  - [Answer Buttons](#answer-buttons)
+  - [Quit Game Button](#quit-game-button)
+  - [Feedback](#feedback)
+  - [Next Button](#next-button)
+  - [Play Again Button](#play-again-button)
+  - [Future Features](#future-features)
+- [Deployment](#deployment)
+- [Local Development](#local-development)
+  - [Forking](#forking)
+  - [Cloning](#cloning)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+  - [Automated Testing](#automated-testing)
+  - [Manual Testing](#manual-testing)
+  - [Fixed Bugs](#fixed-bugs)
+  - [Unfixed Bugs](#unfixed-bugs)
+- [Credits](#credits)
 
+## Features:
 The website has just a single page, which is responsive, and has a favicon, a logo which is made up of the title with an image of vinyl record on either side, and the game area, whose contents change depending on where the player is in the quiz.
 
 ### Favicon:
@@ -79,6 +105,15 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 ### Play Again Button:
 ![Play Again Button](assets/screenshots/play_again_button.png)
 - The Play Again variant of the Play button found at the end screen, used to start a new game of the same length as the one just completed.
+
+### Future Features:
+Some features I would like to add to this quiz in the future include:
+- Difficulty levels (easy, medium, hard), which will cause different questions to be generated.
+- Options to customize types of music in the set of questions from one or more categories (e.g. select one or more genres and/or eras of music).
+- A shuffle function to shuffle the questions so they will be produced in a random order.
+- The ability for players to make a user account and log in, and keep track of their personal best.
+- A leaderboard to keep track of high scores across all players.
+- Achievements for feats such as getting a perfect score on a quiz.
 
 ## Technologies Used:
 
@@ -181,12 +216,17 @@ I also tested to make sure the following features worked correctly:
 - Choosing Play Again will start a new quiz of the same length from scratch, with a score of 0, the timer reset to 15 seconds, and back to Question 1.
 - Choosing Quit Game will return the player to the main menu.
 
-## Fixed Bugs:
+### Fixed Bugs:
 - Adding 'event' to function (i.e. 'e => function(event)') in loop for adding event listeners to answer buttons caused checkAnswer() not to be called. This has been fixed by removing that piece of code and leaving both functions without parameters.
 - Score was not being updated after last question. This has been fixed by getting the DOM element with the id "score" and updating it.
 - Wrong answers were being treated as invalid because the "in" keyword was used to check for list membership, rather than the includes() method. This has been fixed by updating the check to use the includes() method instead of "in".
 
+### Unfixed Bugs:
+- No unfixed bugs were found to remain in this project after testing.
+
 ## Credits:
 - The image of a record used in the quiz logo was taken from the following link: https://www.vecteezy.com/png/9313617-vinyl-record-vector-illustration-isolated-on-white-background [Vinyl Record PNGs by Vecteezy](https://www.vecteezy.com/free-png/vinyl-record), is under the Free License, and was created by Ovidiu Timplaru.
 - The favicon of a music note used in this website is from [favicon.io](https://favicon.io/emoji-favicons/musical-note), and is distributed under the [Creative Commons BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). No changes were made to the favicon files in this project.
-- All other code in this project is my own original work.
+- The statistics mentioned in the intro of the readme are from Headphones Addict, from an article written by Matija Ferjan https://headphonesaddict.com/listening-to-music-statistics/.
+- The questions in this quiz were designed by me.
+- All other code and content in this project is my own original work.
