@@ -26,7 +26,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 - Main Menu
   - At the main menu, where the player lands upon first opening the website, the game area contains just a welcome message, the Play buttons, and four buttons for selecting the length of the quiz.
 
-![Ultimate Music Quiz question screen](assets/screenshots/ask_question.png)
+![Ultimate Music Quiz question screen](assets/screenshots/ask_question_screen.png)
 - Asking a Question
   - When a question is posed to the user, the game area will display the question, the current score, the timer (which updates every second after the question is asked until reaching 0), four answer buttons with possible answers to the question, each in a different colour, and the Quit Game button which will take you back to the main menu.
 
