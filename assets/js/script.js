@@ -238,7 +238,7 @@ function nextQuestion() {
     endGame();
   }
   else {
-    question.innerText = "Question " + questionNumber + ": " + questions[questionNumber];
+    question.innerText = "Question " + questionNumber + " of " + chosenLength + ": " + questions[questionNumber];
     for (let i = 0; i < buttons.length; i++) {
       buttons[i].innerText = answers[questionNumber][i];
       buttons[i].title = answers[questionNumber][i];

@@ -112,7 +112,6 @@ label {
 
 /* All buttons - size, text and shape */
 button {
-  border-radius: 50%;
   border: 6px solid;
   color: white;
   width: 200px;
@@ -146,17 +145,20 @@ button {
 /* Quit, Play and Next buttons - colour */
 
 #quit-button {
+  border-radius: 50%;
   background-color: grey;
   border-color: black;
 }
 
 #play-button {
+  border-radius: 50%;
   background-color: yellow;
   border-color: goldenrod;
   color: black;
 }
 
 #next-button {
+  border-radius: 50%;
   background-color: purple;
   border-color: indigo;
 }
