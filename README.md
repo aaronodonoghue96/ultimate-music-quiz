@@ -23,12 +23,16 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 ### Game Area:
 
 - Main Menu
+![Ultimate Music Quiz main menu screen](assets/screenshots/main_menu.png)
   - At the main menu, where the player lands upon first opening the website, the game area contains just a welcome message, the Play buttons, and four buttons for selecting the length of the quiz.
 - Asking a Question
+![Ultimate Music Quiz question screen](assets/screenshots/ask_question.png)
   - When a question is posed to the user, the game area will display the question, the current score, the timer (which updates every second after the question is asked until reaching 0), four answer buttons with possible answers to the question, each in a different colour, and the Quit Game button which will take you back to the main menu.
 - Feedback on Answer
+![Ultimate Music Quiz feedback screen](assets/screenshots/answer_feedback.png)
   - When the user is given feedback on whether their answer is right or wrong (or if they ran out of time), the game area will display a message to indicate if the answer is right, wrong, or if the user was out of time, as well as the Next button to advance to the next question, and the Quit Game button to return to the main menu.
 - End of Game
+![Ultimate Music Quiz end screen](assets/screenshots/end_of_game.png)
   - When the game is over, the user is shown their final score, a message to thank them for playing the game, and the Play button (which now says "Play Again"), which will restart a new game of the same length, and the Quit Game button, which will return the user to the main menu.
 
 ### Play Button:
