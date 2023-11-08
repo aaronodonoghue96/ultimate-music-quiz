@@ -59,7 +59,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 - Feedback on Answer
   - When the user is given feedback on whether their answer is right or wrong (or if they ran out of time), the game area will display a message to indicate if the answer is right, wrong, or if the user was out of time, as well as the Next button to advance to the next question, and the Quit Game button to return to the main menu.
 
-![Ultimate Music Quiz end screen](assets/screenshots/end_of_game.png)
+![Ultimate Music Quiz end screen](assets/screenshots/end_of_game_screen.png)
 - End of Game
   - When the game is over, the user is shown their final score, a message to thank them for playing the game, and the Quit Game button, which will return the user to the main menu.
 
