@@ -107,7 +107,48 @@ To clone this repository:
 
 ### Manual Testing:
 
-This website was tested on a wide variety of mobiles, tablets and desktops using Google Developer Tools.
+This website was tested on a wide variety of mobiles, tablets and desktops using Google Developer Tools. On all the devices I tested, I ensured the text was visible in all cases, that the buttons and text were the right size so that the text would fit inside the buttons, that the answer buttons fit on the screen in either a line of 4 or a 2x2 grid, with the Quit Game button below, and that the entire game is visible without the need to scroll.
+
+The devices I tested on using Google Developer Tools were:
+- iPhone SE
+- iPhone XR
+- iPhone 12 Pro
+- iPhone 14 Pro Max
+- Pixel 7
+- Samsung Galaxy 8+
+- Samsung Galaxy S20 Ultra
+- iPad Mini
+- iPad Air
+- iPad Pro
+- Surface Pro 7
+- Surface Duo
+- Galaxy Fold
+- Samsung Galaxy A51/71
+- Nest Hub
+- Nest Hub Max
+
+I also tested to make sure the following features worked correctly:
+- Clicking the Play button on the main menu will start the game on Question 1, with a score of 0, the timer set to 15 seconds, and exactly one timer active.
+- Clicking any of the quiz length selection buttons will set the quiz to the specified length, either 5, 10, 15 or 20, upon pressing Play.
+- The score is set to 0 at the beginning of each new game, and is only increased if the player answers correctly.
+- The amount of points awarded is equal to how many seconds are left on the timer when the answer was given.
+- The score updates after every correct answer, and displays the total points earned so far.
+- The timer stops when any answer is selected or the Quit Game button is clicked.
+- There is no way to give an answer outside of the four possible answers supplied for each question.
+- There is a maximum of one timer active at any given time.
+- The timer value will never be greater than 15 or less than 0.
+- The timer counts down by 1 once every second.
+- If the timer reaches zero, it stops. The player cannot answer the question, is awarded no points, and is given feedback to indicate that they are out of time, and what the correct answer for that question was.
+- If the correct answer is selected, the score is updated to include the points earned for that question, and the player is given feedback to indicate their answer is correct.
+- If an incorrect answer is selected, no points are awarded, and the player is given feedback to indicate their answer is incorrect, and what the correct answer for that question was.
+- Points are never deducted from the total while the quiz is active.
+- The Quit Game button takes the player back to the main menu, exiting the quiz and resetting the timer, score and question number, and allowing the user to start a new quiz from scratch and choose its length.
+- The Next button advances the player to the next question, increases the question number by 1, displays a new question with a new set of possible answers, and resets the timer to 15 seconds.
+- If the last question has just been answered, the Next button will instead take the player to the end screen.
+- The end screen displays the player's final score, a message to thank them for playing, the Play button with the text "Play Again", and the Quit Game button.
+- The final score will never be greater than 15 times the chosen quiz length, i.e. 75 for 5 questions, 150 for 10 questions, 225 for 15 questions, or 300 for 20 questions, and will never be less than 0.
+- Choosing Play Again will start a new quiz of the same length from scratch, with a score of 0, the timer reset to 15 seconds, and back to Question 1.
+- Choosing Quit Game will return the player to the main menu.
 
 ## Fixed Bugs:
 - Adding 'event' to function (i.e. 'e => function(event)') in loop for adding event listeners to answer buttons caused checkAnswer() not to be called. This has been fixed by removing that piece of code and leaving both functions without parameters.
