@@ -140,6 +140,7 @@ function mainMenu() {
   quitButton.style.display = "none";
   playButton.style.display = "inline";
   playButton.innerText = "Play";
+  playButton.title = "Play";
   question.innerText = "Welcome to the Ultimate Music Quiz!";
   quizLengthSelection.style.display = "block";
 }
@@ -264,4 +265,5 @@ function endGame() {
   }
   playButton.style.display = "inline";
   playButton.innerText = "Play Again";
+  playButton.title = "Play Again";
 }
