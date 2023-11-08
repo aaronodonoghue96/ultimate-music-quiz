@@ -58,16 +58,35 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 
 ## Deployment:
 
- This site is deployed using GitHub Pages - [Ultimate Music Quiz](https://aaronodonoghue96.github.io/ultimate-music-quiz/)
+This site is deployed using GitHub Pages - [Ultimate Music Quiz](https://aaronodonoghue96.github.io/ultimate-music-quiz/)
 
- To deploy the site to GitHub Pages:
- - Login to GitHub.
- - Go to the project repository aaronodonoghue96/ultimate-music-quiz.
- - Click on the Settings button.
- - Select the Pages option in the vertical menu on the left.
- - Select "main" as the branch from the source dropdown menu.
- - Click Save.
- - The site is now deployed.
+To deploy the site to GitHub Pages:
+- Login to GitHub.
+- Go to the project repository aaronodonoghue96/ultimate-music-quiz.
+- Click on the Settings button.
+- Select the Pages option in the vertical menu on the left.
+- Select "main" as the branch from the source dropdown menu.
+- Click Save.
+- The site is now deployed.
+
+## Local Development:
+
+### Forking:
+
+To fork this repository:
+- Login to GitHub.
+- Go to the project repository aaronodonoghue96/ultimate-music-quiz.
+- Click the Fork button in the top right corner.
+- You have now forked the repository.
+
+### Cloning:
+
+To clone this repository:
+- Login to GitHub.
+- Go to the project repository aaronodonoghue96/ultimate-music-quiz.
+- Click on the green Code button, and under the Local tab, select either HTTPS, SSH or GitHub CLI, and copy the URL displayed.
+- Open a terminal, navigate to the directory you want to place the repository into, and type 'git clone', then paste the URL you just copied, and press Enter.
+- You have now cloned the repository.
 
 ## Fixed Bugs:
 Adding 'event' to function (i.e. 'e => function(event)') in loop for adding event listeners to answer buttons caused checkAnswer() not to be called. This has been fixed by removing that piece of code and leaving both functions without parameters.
