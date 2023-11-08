@@ -88,6 +88,19 @@ To clone this repository:
 - Open a terminal, navigate to the directory you want to place the repository into, and type 'git clone', then paste the URL you just copied, and press Enter.
 - You have now cloned the repository.
 
+## Testing:
+
+### Automated Testing:
+
+- W3C was used to validate both the HTML and CSS on the website. Both passed with no errors or warnings.
+- jshint was used to validate the JavaScript. It passed with no errors and only one warning: Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. This was used to add event listeners to all answer buttons.
+- Lighthouse was used to assess the performance, accessibility, best practices, and SEO of the website. The accessibility and best practices both scored 100 while performance and SEO both scored 92. The results can be seen in the image below:
+![index.html](screenshots/lighthouse.png)
+
+### Manual Testing:
+
+This website was tested on a wide variety of mobiles, tablets and desktops using Google Developer Tools.
+
 ## Fixed Bugs:
 Adding 'event' to function (i.e. 'e => function(event)') in loop for adding event listeners to answer buttons caused checkAnswer() not to be called. This has been fixed by removing that piece of code and leaving both functions without parameters.
 Score was not being updated after last question. This has been fixed by getting the DOM element with the id "score" and updating it.
