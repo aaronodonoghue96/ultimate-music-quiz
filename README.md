@@ -14,5 +14,6 @@ Score was not being updated after last question. This has been fixed by getting 
 Wrong answers were being treated as invalid because the "in" keyword was used to check for list membership, rather than the includes() method. This has been fixed by updating the check to use the includes() method instead of "in".
 
 ## Credits:
-The image of a record used in the quiz logo was taken from the following link: https://www.vecteezy.com/png/9313617-vinyl-record-vector-illustration-isolated-on-white-background <a href="https://www.vecteezy.com/free-png/vinyl-record">Vinyl Record PNGs by Vecteezy</a>, is under the Free License, and was created by Ovidiu Timplaru.
-All other code in this project is my own original work.
+- The image of a record used in the quiz logo was taken from the following link: https://www.vecteezy.com/png/9313617-vinyl-record-vector-illustration-isolated-on-white-background [Vinyl Record PNGs by Vecteezy](https://www.vecteezy.com/free-png/vinyl-record), is under the Free License, and was created by Ovidiu Timplaru.
+- The favicon of a music note used in this website is from [favicon.io](https://favicon.io/emoji-favicons/musical-note), and is distributed under the [Creative Commons BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). No changes were made to the favicon files in this project.
+- All other code in this project is my own original work.
