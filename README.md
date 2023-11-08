@@ -14,7 +14,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 
 ### Favicon:
 - The favicon displayed in the browser tab.
-![Favicon of a music note](assets/screenshots/favicon.png)
+![Favicon of a music note](assets/screenshots/favicon_music.png)
 
 ### Logo:
 - The logo for the quiz, consisting of the title surrounded by two vinyl records.
@@ -51,8 +51,12 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 ![Score](assets/screenshots/score.png)
 
 ### Timer:
+- The timer for the quiz, which is set to 15 seconds at the start of each new question, used to determine how many points the player gets for a correct answer based on how much time remains after it is selected.
+- If this reaches 0, the player is out of time and cannot answer the question, and is taken to the feedback screen where they are told they are out of time, given the correct answer, and the options to proceed or quit.
+![Timer](assets/screenshots/timer.png)
 
 ### Answer Buttons:
+- The answer buttons for the quiz, which are populated at the start of each question with the four possible answers for that question. Once one of these is selected, the timer will stop, and the feedback screen will appear
 
 ### Quit Game Button:
 
