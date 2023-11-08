@@ -41,6 +41,21 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 
 ### Next Button:
 
+## Technologies Used:
+
+- Languages used:
+ - JavaScript
+ - HTML
+ - CSS
+
+- Other technologies used:
+ - Git: version control
+ - GitHub: store files and committed changes
+ - Google Developer Tools: check responsiveness and display on different device sizes
+ - Favicon.io: create favicon for website
+ - Am I Responsive?: display website on different device types
+ - GitHub Pages: deployment
+
 ## Fixed Bugs:
 Adding 'event' to function (i.e. 'e => function(event)') in loop for adding event listeners to answer buttons caused checkAnswer() not to be called. This has been fixed by removing that piece of code and leaving both functions without parameters.
 Score was not being updated after last question. This has been fixed by getting the DOM element with the id "score" and updating it.
