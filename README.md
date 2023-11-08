@@ -17,7 +17,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 - The favicon displayed in the browser tab.
 
 ### Logo:
-![Ultimate Music Quiz logo](assets/screenshots/logo.png)
+![Ultimate Music Quiz logo](assets/screenshots/logo_image.png)
 - The logo for the quiz, consisting of the title surrounded by two vinyl records.
 
 ### Game Area:
