@@ -46,7 +46,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 - The quiz length selection options, with images of each of the four options selected.
 
 ### Play Button:
-![Play Button](assets/screenshots/play_button.png)
+![Play Button](assets/screenshots/initial_play_button.png)
 - The Play button, used to start the game with the length chosen in the quiz length selection.
 
 ### Score:
