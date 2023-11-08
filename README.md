@@ -56,6 +56,19 @@ The website has just a single page, which is responsive, and has a favicon, a lo
  - Am I Responsive?: display website on different device types
  - GitHub Pages: deployment
 
+ ## Deployment:
+
+ This site is deployed using GitHub Pages - [Ultimate Music Quiz](https://aaronodonoghue96.github.io/ultimate-music-quiz/)
+
+ To deploy the site to GitHub Pages:
+ - Login to GitHub.
+ - Go to the project repository aaronodonoghue96/ultimate-music-quiz.
+ - Click on the Settings button.
+ - Select the Pages option in the vertical menu on the left.
+ - Select "main" as the branch from the source dropdown menu.
+ - Click Save.
+ - The site is now deployed.
+
 ## Fixed Bugs:
 Adding 'event' to function (i.e. 'e => function(event)') in loop for adding event listeners to answer buttons caused checkAnswer() not to be called. This has been fixed by removing that piece of code and leaving both functions without parameters.
 Score was not being updated after last question. This has been fixed by getting the DOM element with the id "score" and updating it.
