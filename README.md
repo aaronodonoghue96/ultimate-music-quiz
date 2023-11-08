@@ -1,6 +1,6 @@
 # Ultimate Music Quiz
 
-![Ultimate Music Quiz shown on a variety of screen sizes](assets/screenshots/ultimate-music-quiz.png)
+![Ultimate Music Quiz shown on a variety of screen sizes](assets/screenshots/ultimate_music_quiz.png)
 
 Visit the deployed site: https://aaronodonoghue96.github.io/ultimate-music-quiz/
 
@@ -22,7 +22,7 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 
 ### Game Area:
 
-![Ultimate Music Quiz main menu screen](assets/screenshots/main_menu.png)
+![Ultimate Music Quiz main menu screen](assets/screenshots/main_menu_screen.png)
 - Main Menu
   - At the main menu, where the player lands upon first opening the website, the game area contains just a welcome message, the Play buttons, and four buttons for selecting the length of the quiz.
 
