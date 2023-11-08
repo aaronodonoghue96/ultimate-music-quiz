@@ -13,50 +13,54 @@ This quiz was designed for lovers of music to test their knowledge, with questio
 The website has just a single page, which is responsive, and has a favicon, a logo which is made up of the title with an image of vinyl record on either side, and the game area, whose contents change depending on where the player is in the quiz.
 
 ### Favicon:
-- The favicon displayed in the browser tab.
 ![Favicon of a music note](assets/screenshots/favicon_music.png)
+- The favicon displayed in the browser tab.
 
 ### Logo:
-- The logo for the quiz, consisting of the title surrounded by two vinyl records.
 ![Ultimate Music Quiz logo](assets/screenshots/logo.png)
+- The logo for the quiz, consisting of the title surrounded by two vinyl records.
 
 ### Game Area:
 
-- Main Menu
 ![Ultimate Music Quiz main menu screen](assets/screenshots/main_menu.png)
+- Main Menu
   - At the main menu, where the player lands upon first opening the website, the game area contains just a welcome message, the Play buttons, and four buttons for selecting the length of the quiz.
-- Asking a Question
+
 ![Ultimate Music Quiz question screen](assets/screenshots/ask_question.png)
+- Asking a Question
   - When a question is posed to the user, the game area will display the question, the current score, the timer (which updates every second after the question is asked until reaching 0), four answer buttons with possible answers to the question, each in a different colour, and the Quit Game button which will take you back to the main menu.
-- Feedback on Answer
+
 ![Ultimate Music Quiz feedback screen](assets/screenshots/answer_feedback.png)
+- Feedback on Answer
   - When the user is given feedback on whether their answer is right or wrong (or if they ran out of time), the game area will display a message to indicate if the answer is right, wrong, or if the user was out of time, as well as the Next button to advance to the next question, and the Quit Game button to return to the main menu.
-- End of Game
+
 ![Ultimate Music Quiz end screen](assets/screenshots/end_of_game.png)
+- End of Game
   - When the game is over, the user is shown their final score, a message to thank them for playing the game, and the Play button (which now says "Play Again"), which will restart a new game of the same length, and the Quit Game button, which will return the user to the main menu.
 
 ### Quiz Length Selection Options:
+![5 Questions Selected](assets/screenshots/quiz_length_selection_5.png)
+![10 Questions Selected](assets/screenshots/quiz_length_selection_10.png)
+![15 Questions Selected](assets/screenshots/quiz_length_selection_15.png)
+![20 Questions Selected](assets/screenshots/quiz_length_selection_20.png)
 - The quiz length selection options, with images of each of the four options selected.
-![5 Questions Selected](assets/screenshots/quiz_length_selection_five.png)
-![10 Questions Selected](assets/screenshots/quiz_length_selection_ten.png)
-![15 Questions Selected](assets/screenshots/quiz_length_selection_fifteen.png)
-![20 Questions Selected](assets/screenshots/quiz_length_selection_twenty.png)
 
 ### Play Button:
-- The Play button, used to start the game with the length chosen in the quiz length selection.
 ![Play Button](assets/screenshots/play_button.png)
+- The Play button, used to start the game with the length chosen in the quiz length selection.
 
 ### Score:
-- The score display, used to keep track of the player's score from correct answers, based on how quickly they gave each correct answer.
 ![Score](assets/screenshots/score.png)
+- The score display, used to keep track of the player's score from correct answers, based on how quickly they gave each correct answer.
 
 ### Timer:
+![Timer](assets/screenshots/timer.png)
 - The timer for the quiz, which is set to 15 seconds at the start of each new question, used to determine how many points the player gets for a correct answer based on how much time remains after it is selected.
 - If this reaches 0, the player is out of time and cannot answer the question, and is taken to the feedback screen where they are told they are out of time, given the correct answer, and the options to proceed or quit.
-![Timer](assets/screenshots/timer.png)
 
 ### Answer Buttons:
-- The answer buttons for the quiz, which are populated at the start of each question with the four possible answers for that question. Once one of these is selected, the timer will stop, and the feedback screen will appear
+![Answer Buttons](assets/screenshots/answer_buttons.png)
+- The answer buttons for the quiz, which are populated at the start of each question with the four possible answers for that question. Once one of these is selected, the timer will stop, and the feedback screen will appear to tell the player if their answer is correct or incorrect, and give them the options to proceed or quit.
 
 ### Quit Game Button:
 
@@ -65,8 +69,8 @@ The website has just a single page, which is responsive, and has a favicon, a lo
 ### Next Button:
 
 ### Play Again Button:
-- The Play Again variant of the Play button found at the end screen, used to start a new game of the same length as the one just completed.
 ![Play Again Button](assets/screenshots/play_again_button.png)
+- The Play Again variant of the Play button found at the end screen, used to start a new game of the same length as the one just completed.
 
 ## Technologies Used:
 
